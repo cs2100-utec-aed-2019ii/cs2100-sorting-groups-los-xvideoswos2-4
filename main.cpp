@@ -1,6 +1,8 @@
 #include <iostream>
+using namespace std;
 
-int main (int, char * []){
-    std::cout << "Hello World" << std::endl;
-    return 1;
+int main(int argc, char const *argv[])
+{
+  
+  return 0;
 }
