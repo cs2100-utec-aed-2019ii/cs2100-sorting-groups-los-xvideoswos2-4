@@ -1,10 +1,9 @@
 #ifndef ALGORITHM
 #define ALGORITHM
-#include <vector>
-template<typename T>
+template<class T>
 class Sorting {
-  vector<T> insertion_sort(vector<T> arreglo);
-  vector<T> bubble_sort(vector<T> arreglo);
-  vector<T> selection_sort(vector<T> arreglo);
+  //void insertion_sort(T* arreglo, int size);
+  void bubble_sort(T* arreglo, int size);
+  //void selection_sort(T* arreglo, int size);
 };
 #endif

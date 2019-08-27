@@ -1,7 +1,7 @@
 #include "./algorithms.h"
-#include <vector>
-
-vector<T> Sorting::bubble_sort(vector<T> arreglo)
+#include <iostream>
+template<typename T>
+void Sorting<T>::bubble_sort(T* arreglo, int size)
 {
-  cout << "bubble sort" << endl;
+  std::cout << "bubble sort" << std::endl;
 }

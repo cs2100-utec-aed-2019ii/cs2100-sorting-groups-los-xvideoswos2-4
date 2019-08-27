@@ -1,2 +1,8 @@
+run: compile
+	./algoritmos
+
 compile:
-	g++ main.cpp bubble_sort.cpp 
+	clang++ -o algoritmos main.cpp bubble_sort.cpp 
+
+clear:
+	rm algoritmos
