@@ -1,6 +1,7 @@
-#include <iostream>
+#include "./algorithms.h"
 
-int main (int, char * []){
-    std::cout << "Hello World" << std::endl;
-    return 1;
+int main(int argc, char const *argv[])
+{
+  Sorting<int> a;
+  return 0;
 }
