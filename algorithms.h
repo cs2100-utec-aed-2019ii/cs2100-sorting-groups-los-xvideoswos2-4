@@ -16,6 +16,7 @@ class Sorting {
   void heapsort(T arreglo[],int size);
   void quick_sort(T* arreglo, int front, int back);
   void radix_sort(T* arreglo, int size);
+  void shellsort(T* arreglo, int size);
 };
 
 template<typename T>

@@ -3,6 +3,7 @@
 #include "./bubble_sort.cpp"
 #include "./quicksort.cpp"
 #include "./radixsort.cpp"
+#include "./shellsort.cpp"
 #include "./selectionsort.cpp"
 #include "./heapsort.cpp"
 using namespace std;
