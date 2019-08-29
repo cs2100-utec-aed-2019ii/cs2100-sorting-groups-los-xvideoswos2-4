@@ -4,6 +4,7 @@
 #include "./quicksort.cpp"
 #include "./radixsort.cpp"
 #include "./shellsort.cpp"
+#include "./selectionsort.cpp"
 using namespace std;
 
 int main(int argc, char const *argv[])
