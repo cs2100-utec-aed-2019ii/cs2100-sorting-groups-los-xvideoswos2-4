@@ -4,17 +4,17 @@ template<typename T>
 int Sorting<T>::partir(T* arreglo, int front, int back)
 {
   int piv = arreglo[back];
-  int e = front;
+  int e = front-1;
   for(int i = front; i <= back-1; i++)
   {
     if(arreglo[i] < piv) 
     {
-      swap(&arreglo[e], &arreglo[i]); 
       e++;
+      swap(&arreglo[e], &arreglo[i]); 
     }
   }
-  swap(&arreglo[e], &arreglo[back]);
-  return e;
+  swap(&arreglo[e+1], &arreglo[back]);
+  return e+1;
 }
 
 template<typename T>

@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
 
   a.selection_sort(selection, 6);
   a.heapsort(heap, 6);
-  a.quick_sort(quick, 0, 6);
+  a.quick_sort(quick, 0, 5);
   a.radix_sort(radix, 6);
   a.shellsort(shell, 6);
   a.binsort(bin, 6);
