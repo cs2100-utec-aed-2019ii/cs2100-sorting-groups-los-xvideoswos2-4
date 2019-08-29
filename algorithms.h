@@ -17,6 +17,7 @@ class Sorting {
   void quick_sort(T* arreglo, int front, int back);
   void radix_sort(T* arreglo, int size);
   void shellsort(T* arreglo, int size);
+  void countingsort(T *array, int size);
 };
 
 template<typename T>
