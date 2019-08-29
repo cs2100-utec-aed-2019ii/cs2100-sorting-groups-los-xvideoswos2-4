@@ -22,6 +22,7 @@ class Sorting {
   void binsort(T* arreglo, int size);
   std::vector<T> brick_sort(std::vector<T> &arr);
   std::vector<T> merge_Sort(std::vector<T> arreglo);
+  void countingsort(T *array, int size);
 };
 
 template<typename T>

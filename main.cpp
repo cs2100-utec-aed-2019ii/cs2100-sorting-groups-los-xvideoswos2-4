@@ -11,6 +11,7 @@
 #include "./insertion_sort.cpp"
 #include "./merge_sort.cpp"
 #include "./brick_sort.cpp"
+#include "./countingsort.cpp"
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -26,6 +27,7 @@ int main(int argc, char const *argv[])
   int bin[] = {1, 8, 3, 7, 2, 9};
   int brick[] = {1, 8, 3, 7, 2, 9};
   int merge[] = {1, 8, 3, 7, 2, 9};
+  int counting[] = {1, 8, 3, 7, 2, 9};
 
   vector<int> vinsertion(insertion, insertion+6);
   vector<int> vbubble(bubble, bubble+6);
@@ -38,6 +40,7 @@ int main(int argc, char const *argv[])
   a.radix_sort(radix, 6);
   a.shellsort(shell, 6);
   a.binsort(bin, 6);
+  a.countingsort(counting, 6);
 
   cout << "Insertion Sort: ";
   a.imparray(a.insertion_sort(vinsertion));
@@ -59,5 +62,7 @@ int main(int argc, char const *argv[])
   a.imparray(radix, 6);
   cout << "Brick Sort: ";
   a.imparray(a.brick_sort(vbrick));
+  cout << "Counting Sort: ";
+  a.imparray(counting, 6);
   return 0;
 }
