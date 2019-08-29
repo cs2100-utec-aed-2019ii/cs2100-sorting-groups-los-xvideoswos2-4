@@ -1,9 +1,11 @@
 #include "./algorithms.h"
+#include <vector>
 
-vector<T> Sorting<T>::bubble_sort(vector<T> arreglo)
+template <typename T>
+std::vector<T> Sorting<T>::bubble_sort(std::vector<T> arreglo)
 {
     int n = arreglo.size();
-    vector<T> arr;
+    std::vector<T> arr;
     for(int i = 0;i<n;i++){
         arr.push_back(arreglo[i]);
     }
@@ -19,10 +21,6 @@ vector<T> Sorting<T>::bubble_sort(vector<T> arreglo)
             }
             
         }
-    }
-    for (int k = 0; k < n; k++)
-    {
-        cout<<arr[k]<<" ";
     }
     return arr;
 }

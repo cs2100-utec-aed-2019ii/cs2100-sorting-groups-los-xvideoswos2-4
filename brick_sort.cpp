@@ -1,7 +1,8 @@
 #include "algorithms.h"
+#include <vector>
 
 template <class T>
-void Sorting<T>::brick_sort(vector<T>&arr) 
+std::vector<T> Sorting<T>::brick_sort(std::vector<T>&arr) 
 { 
     bool ordenado = false; 
     int temp;

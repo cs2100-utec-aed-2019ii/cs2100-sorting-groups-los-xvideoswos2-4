@@ -1,19 +1,19 @@
 #include "./algorithms.h"
+#include <vector>
+
+template<class T>
+void merge(std::vector<T> & vec);
+template<class T>
+void combinar(std::vector<T>&left,std::vector<T>& right,std::vector<T>& vec_1);
 
 
 template<class T>
-void merge(vector<T> & vec);
-template<class T>
-void combinar(vector<T>&left,vector<T>& right,vector<T>& vec_1);
-
-
-template<class T>
-void merge(vector<T> & vec) {
+void merge(std::vector<T> & vec) {
     if (vec.size() <= 1) return;
 
     int mid = vec.size() / 2;
-    vector<T> left;
-    vector<T> right;
+    std::vector<T> left;
+    std::vector<T> right;
 
     for (size_t j = 0; j < mid;j++)
         left.push_back(vec[j]);
@@ -26,7 +26,7 @@ void merge(vector<T> & vec) {
 }
 
 template<class T>
-void combinar(vector<T>&left, vector<T>& right, vector<T>& vec_1)
+void combinar(std::vector<T>&left, std::vector<T>& right, std::vector<T>& vec_1)
 {
     int nL = left.size();
     int nR = right.size();
@@ -52,12 +52,12 @@ void combinar(vector<T>&left, vector<T>& right, vector<T>& vec_1)
     }
 }
 template<class T>
-vector<T> Sorting<T>::merge_Sort(vector<T>arreglo){
-    int n = arreglo.size();
-    vector<T> arr;
-    for(int i = 0;i<n;i++){
-        arr.push_back(arreglo[i]);
-    }
-    merge(arr);
-    return arr;
+std::vector<T> Sorting<T>::merge_Sort(std::vector<T>arreglo){
+  int n = arreglo.size();
+  std::vector<T> arr;
+  for(int i = 0;i<n;i++){
+      arr.push_back(arreglo[i]);
+  }
+  merge(arr);
+  return arr;
 }
